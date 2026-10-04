@@ -13,4 +13,11 @@ describe(' RF01-BloqueMemoria', () => {
     const bloque = new BloqueMemoria(0, 1024);
     expect(bloque.estaLibre).toBe(true);
   });
+
+    it('un bloque con PID asignado está ocupado', () => {
+    const bloque = new BloqueMemoria(0, 200, 7);
+    expect(bloque.estaLibre).toBe(false);
+    expect(bloque.pidAsignado).toBe(7);
+  });
+
 });
