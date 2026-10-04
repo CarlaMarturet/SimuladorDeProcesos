@@ -8,4 +8,9 @@ describe(' RF01-BloqueMemoria', () => {
     expect(bloque.inicio).toBe(100);
     expect(bloque.tamanio).toBe(50);
   });
+
+    it('un bloque nuevo está libre por defecto', () => {
+    const bloque = new BloqueMemoria(0, 1024);
+    expect(bloque.estaLibre).toBe(true);
+  });
 });

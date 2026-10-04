@@ -3,4 +3,8 @@ export class BloqueMemoria {
     readonly inicio: number,
     readonly tamanio: number
   ) {}
+
+   get estaLibre(): boolean {
+    return true;
+  }
 }
