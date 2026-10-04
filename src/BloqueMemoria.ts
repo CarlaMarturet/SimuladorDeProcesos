@@ -3,11 +3,15 @@ export class BloqueMemoria {
     readonly inicio: number,
     readonly tamanio: number,
     readonly pidAsignado: number | null = null
+  ) {
 
-    
-  ) {}
+  }
 
  get estaLibre(): boolean {
     return this.pidAsignado === null;
+  }
+
+   get fin(): number {
+    return this.inicio + this.tamanio;
   }
 }

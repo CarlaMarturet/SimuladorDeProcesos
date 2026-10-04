@@ -20,4 +20,9 @@ describe(' RF01-BloqueMemoria', () => {
     expect(bloque.pidAsignado).toBe(7);
   });
 
+  it('calcula la dirección final como inicio más tamaño', () => {
+    const bloque = new BloqueMemoria(100, 50);
+    expect(bloque.fin).toBe(150);
+  });
+
 });
