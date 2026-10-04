@@ -7,7 +7,8 @@ export class GestorMemoria {
     this.bloques = [new BloqueMemoria(0, memoriaTotal)];
   }
 
+
   obtenerBloques(): readonly BloqueMemoria[] {
-    return this.bloques;
+    return [...this.bloques];
   }
 }
