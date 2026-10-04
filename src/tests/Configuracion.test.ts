@@ -19,5 +19,14 @@ describe('RF01 - ConfiguracionSimulacion', () => {
 
     it.each([0, -1])('rechaza quantum no positivo: %p', valor => {
     expect(() => new ConfiguracionSimulacion(1024, valor)).toThrow(ConfiguracionInvalidaError);
+
+  });
+
+   it.each([10.5, NaN, Infinity])('rechaza memoria total no entera: %p', valor => {
+    expect(() => new ConfiguracionSimulacion(valor, 2)).toThrow(ConfiguracionInvalidaError);
+  });
+
+    it.each([1.5, NaN, Infinity])('rechaza quantum no entero: %p', valor => {
+    expect(() => new ConfiguracionSimulacion(1024, valor)).toThrow(ConfiguracionInvalidaError);
   });
 });
