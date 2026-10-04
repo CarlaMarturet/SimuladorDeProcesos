@@ -1,4 +1,4 @@
-/** Error base del dominio del simulador. */
+
 export class SimuladorError extends Error {
   constructor(mensaje: string) {
     super(mensaje);
@@ -7,5 +7,5 @@ export class SimuladorError extends Error {
   }
 }
 
-/** Se lanza cuando la memoria total o el quantum no son enteros positivos. */
+
 export class ConfiguracionInvalidaError extends SimuladorError {}
