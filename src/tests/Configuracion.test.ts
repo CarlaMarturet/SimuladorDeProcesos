@@ -29,4 +29,11 @@ describe('RF01 - ConfiguracionSimulacion', () => {
     it.each([1.5, NaN, Infinity])('rechaza quantum no entero: %p', valor => {
     expect(() => new ConfiguracionSimulacion(1024, valor)).toThrow(ConfiguracionInvalidaError);
   });
+
+    it('el mensaje de error indica qué parámetro es inválido', () => {
+    expect(() => new ConfiguracionSimulacion(0, 2))
+      .toThrow('La memoria total debe ser un entero positivo');
+    expect(() => new ConfiguracionSimulacion(1024, 0))
+      .toThrow('El quantum debe ser un entero positivo');
+  });
 });
