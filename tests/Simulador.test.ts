@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { ConfiguracionSimulacion } from '../ConfiguracionSimulacion';
-import { Simulador } from '../Simulador';   
+import { ConfiguracionSimulacion } from '../src/ConfiguracionSimulacion';
+import { Simulador } from '../src/Simulador';   
 
 describe('RF01 - Simulador inicial', () => {
   it('inicia en tick 0', () => {

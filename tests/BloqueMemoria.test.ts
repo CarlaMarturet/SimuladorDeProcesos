@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { BloqueMemoria } from '../BloqueMemoria';
+import { BloqueMemoria } from '../src/BloqueMemoria';
 
 describe(' RF01-BloqueMemoria', () => {
   it('guarda inicio y tamaño', () => {

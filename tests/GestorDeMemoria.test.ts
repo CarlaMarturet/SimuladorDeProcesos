@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { GestorMemoria } from '../GestorDeMemoria';
-import { BloqueMemoria } from '../BloqueMemoria';
+import { GestorMemoria } from '../src/GestorDeMemoria';
+import { BloqueMemoria } from '../src/BloqueMemoria';
 
 describe('RF01 - GestorMemoria', () => {
   it('arranca con un único bloque libre que abarca toda la memoria', () => {

@@ -1,7 +1,7 @@
 
 import { describe, it, expect } from 'vitest';
-import { ConfiguracionSimulacion } from '../ConfiguracionSimulacion';
-import { ConfiguracionInvalidaError } from '../errores';
+import { ConfiguracionSimulacion } from '../src/ConfiguracionSimulacion';
+import { ConfiguracionInvalidaError } from '../src/errores';
 
 
 describe('RF01 - ConfiguracionSimulacion', () => {
